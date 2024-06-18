@@ -1,7 +1,7 @@
 import XCTest
-@testable import MyLayout
+@testable import MyUIKitExt
 
-final class MyLayoutTests: XCTestCase {
+final class MyUIKitExttTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest
