@@ -13,6 +13,19 @@ public final class VStackView: UIStackView {
         self.addArrangedSubViews(views())
         autoLayout()
     }
+    
+    public init(
+        spacing: CGFloat = 0,
+        alignment: UIStackView.Alignment = .center,
+        @UIViewBuilder _ views: () -> [UIView]
+    ) {
+        super.init(frame: .zero)
+        self.axis = .vertical
+        self.alignment = alignment
+        self.spacing = spacing
+        self.addArrangedSubViews(views())
+        autoLayout()
+    }
 
     public required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

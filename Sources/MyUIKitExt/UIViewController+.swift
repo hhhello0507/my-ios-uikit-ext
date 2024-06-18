@@ -10,7 +10,7 @@ final class ViewController: UIViewController {
         let l1 = UILabel()
         l1.text = "test1111"
         
-        view = VStackView(spacing: 8) {
+        view = VStackView(alignment: .leading, spacing: 8) {
             SpacerView()
                 .size(width: 100, height: 80)
                 .background(.red)
@@ -24,6 +24,7 @@ final class ViewController: UIViewController {
                     .textColor(.red)
                     .numberOfLines(3)
                     .breakMode(.byTruncatingTail)
+                    .shadow(color: .red, radius: 4, opacity: 1)
 //                    .padding(.top, 10)
 //                    .padding(.leading, 100)
 //                    .padding(100)
