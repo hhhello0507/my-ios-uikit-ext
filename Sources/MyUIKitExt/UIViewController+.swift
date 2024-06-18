@@ -24,7 +24,7 @@ final class ViewController: UIViewController {
                     .textColor(.red)
                     .numberOfLines(3)
                     .breakMode(.byTruncatingTail)
-                    .shadow(color: .red, radius: 4, opacity: 1)
+                    .shadow(color: UIColor(0x000000, alpha: 1), radius: 4, opacity: 1)
 //                    .padding(.top, 10)
 //                    .padding(.leading, 100)
 //                    .padding(100)
