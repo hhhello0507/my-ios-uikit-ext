@@ -1,15 +1,15 @@
 import UIKit
 
-public extension UIStackView {
+public extension UIView {
     func addSubViews(_ views: UIView...) {
         views.forEach {
-            addArrangedSubview($0)
+            addSubview($0)
         }
     }
     
     func addSubViews(_ views: [UIView]) {
         views.forEach {
-            addArrangedSubview($0)
+            addSubview($0)
         }
     }
 }
